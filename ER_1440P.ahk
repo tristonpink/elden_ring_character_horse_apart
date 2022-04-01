@@ -11,6 +11,9 @@ if not (A_IsAdmin or RegExMatch(full_command_line, " /restart(?!\S)"))
     ExitApp
 }
 
+F9::reload
+F12::Suspend
+
 XButton2::
 {
 #IfWinActive ahk_exe eldenring.exe
@@ -45,7 +48,7 @@ z::
 
 		Send {w down}
 		Sleep 10
-		Send {h down}
+		Send {c down}
 		Sleep 500
 		Send {q down}
 		Sleep 10
@@ -55,12 +58,7 @@ z::
 		Sleep 10
 		Send {q up}
 		sleep 10
-		/*
-		Send {w up}
-		Sleep 10
-		Send {h up}
-		Sleep 10
-		*/
+
 		Send {ESC down}
 		Sleep 10
 		Send {ESC UP}
@@ -87,7 +85,7 @@ z::
 		Sleep 10
 		Send {w up}
 		Sleep 10
-		Send {h up}
+		Send {c up}
 		Sleep 10
 }
 return
