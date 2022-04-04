@@ -49,7 +49,7 @@ z::
 		Send {w down}
 		Sleep 10
 		Send {c down}
-		Sleep 500
+		Sleep 200
 		Send {q down}
 		Sleep 10
 		Send {3 down}
